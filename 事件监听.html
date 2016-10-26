@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="btn">点击我</div>
+	<div id="btn2">点击我</div>
+	<!-- 如果你单击了div ，click事件就回按照如下传播：div、body、html、document。 -->
+	<script>
+		var btn=document.getElementById('btn');
+		var btn2=document.getElementById('btn2');
+		var a=function(){
+			alert(111);
+		}
+		
+		// btn.addEventListener('click',function(){
+		// 	alert(this.innerHTML)
+		// },false)
+		// btn.addEventListener('click',function(){
+		// 	alert(2)
+		// },false)
+		// btn.addEventListener('click',function(){
+		// 	alert(3);
+		// },false)
+		// btn.removeEventListener('click',function(){
+		// 	alert(3);
+		// },false);
+		// btn.onclick=function(){
+		// 	alert(111)
+		// }
+		// btn.onclick=function(){
+		// 	alert(222)
+		// }
+		// btn2.onclick=function(){
+		// 	//alert(1)
+			
+		// }
+		
+	</script>
+</body>
+</html>
